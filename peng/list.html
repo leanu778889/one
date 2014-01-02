@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Mobile Devices Support @begin -->
+<meta content="application/xhtml+xml;charset=UTF-8" http-equiv="Content-Type">
+<meta content="no-cache,must-revalidate" http-equiv="Cache-Control">
+<meta content="no-cache" http-equiv="pragma">
+<meta content="0" http-equiv="expires">
+<meta content="telephone=no, address=no" name="format-detection">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta name="apple-mobile-web-app-capable" content="yes" /> <!-- apple devices fullscreen -->
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<!-- Mobile Devices Support @end -->
+<title>无标题文档</title>
+<link href="css/style111(2).css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="Public/js/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+$(".nn").click(function(){
+    $(".list_n").slideToggle("slow");
+	
+  });
+  $(".vv").click(function(){
+    $(".list_v").slideToggle("slow");
+  });
+});
+
+</script>
+<script type="text/javascript">
+$(function(){
+		$(".nn").click(function(){
+			$(".nn").find("span").removeClass("ttag");
+			$(this).addClass("ttag");
+		});
+		$(".vv").click(function(){
+			$(".vv").find("span").removeClass("ttag");
+			$(this).addClass("ttag");
+		});
+	});
+</script>
+</head>
+
+<body>
+<div class="bodyer">
+	<div class="top">
+    	<img src="Public/images/logo.png">
+        <ul>
+        	
+            <li>注册</li>
+            <li>|</li>
+            <li>登录</li>
+        </ul>
+    </div>
+    <div class="top_list">请点击演员列表</div>
+	<div class="nan nn">
+    	<label>男演员</label><span class="tag ttag"></span>
+    </div>
+    <div class="yy_list list_n">
+    	<ul>
+        	<li>影视演员</li>
+            <li>话剧演员</li>
+            <li>戏曲演员</li>
+            <li>主持人</li>
+            <li>舞蹈演员</li>
+            <li>相声小品</li>
+            <li>平面模特</li>
+            <li>T台模特</li>
+            <li>魔术杂技</li>
+            <li>歌手</li>
+            <li>配音演员</li>
+        </ul>
+    </div>
+    <div class="nv vv">
+    	<label>女演员</label><span class="tag ttag"></span>
+    </div>
+    <div class="yy_list list_v">
+    	<ul>
+        	<li>影视演员</li>
+            <li>话剧演员</li>
+            <li>戏曲演员</li>
+            <li>主持人</li>
+            <li>舞蹈演员</li>
+            <li>相声小品</li>
+            <li>平面模特</li>
+            <li>T台模特</li>
+            <li>魔术杂技</li>
+            <li>歌手</li>
+            <li>配音演员</li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>

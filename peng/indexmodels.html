@@ -1,0 +1,187 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<!-- Mobile Devices Support @begin -->
+<meta content="application/xhtml+xml;charset=UTF-8" http-equiv="Content-Type">
+<meta content="no-cache,must-revalidate" http-equiv="Cache-Control">
+<meta content="no-cache" http-equiv="pragma">
+<meta content="0" http-equiv="expires">
+<meta content="telephone=no, address=no" name="format-detection">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta name="apple-mobile-web-app-capable" content="yes" /> <!-- apple devices fullscreen -->
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<!-- Mobile Devices Support @end -->
+<title>无标题文档</title>
+<script type="text/javascript" src="Public/js/jquery.min.js"></script>
+<link href="css/style111(2).css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">// <![CDATA[ 
+var t = n = 0, count; 
+$(document).ready(function(){ 
+count=$("#banner_list a").length; 
+$("#banner_list a:not(:first-child)").hide(); 
+$("#banner_info").html($("#banner_list a:first-child").find("img").attr('alt')); 
+$("#banner_info").click(function(){window.open($("#banner_list a:first-child").attr('href'), "_blank")}); 
+$("#banner li").click(function() { 
+var i = $(this).text() - 1;//获取Li元素内的值，即1，2，3，4 
+n = i; 
+if (i >= count) return; 
+$("#banner_info").html($("#banner_list a").eq(i).find("img").attr('alt')); 
+$("#banner_info").unbind().click(function(){window.open($("#banner_list a").eq(i).attr('href'), "_blank")}) 
+$("#banner_list a").filter(":visible").fadeOut(500).parent().children().eq(i).fadeIn(1000); 
+$(this).css({"background":"#be2424",'color':'#000'}).siblings().css({"background":"#6f4f67",'color':'#fff'}); 
+}); 
+t = setInterval("showAuto()", 4000); 
+$("#banner").hover(function(){clearInterval(t)}, function(){t = setInterval("showAuto()", 4000);}); 
+}) 
+
+function showAuto() 
+{ 
+n = n >=(count - 1) ? 0 : ++n; 
+$("#banner li").eq(n).trigger('click'); 
+} 
+// ]]></script> 
+</head>
+
+<body>
+<div class="bodyer">
+	<div class="top">
+    	<img src="Public/images/logo.png">
+        <ul>
+        	
+            <li>注册</li>
+            <li>|</li>
+            <li>登录</li>
+        </ul>
+    </div>
+    
+    <div class="banner" >
+		  <div id="banner"> 
+            <div id="banner_bg"></div> 
+            <!--标题背景--> 
+            <div id="banner_info"></div> 
+            <!--标题--> 
+            
+            <ul> 
+            <li></li> 
+            <li></li> 
+            <li></li> 
+            <li></li> 
+            </ul> 
+            <div id="banner_list"> 
+            <a href="###" target="_blank"><img src="public/images/yy1.png" width="100%" height="250" alt="" /></a> 
+            <a href="###" target="_blank"><img src="public/images/yy2.png" width="100%" height="250" alt="" /></a> 
+            <a href="###" target="_blank"><img src="public/images/yy3.png" width="100%" height="250" alt="" /></a> 
+            <a href="###" target="_blank"><img src="public/images/yy4.png" width="100%" height="250" alt="" /></a> 
+            </div> 
+          </div>  
+	</div>
+    
+    <div class="list">
+    	<ul>
+        	<li>
+            	<dl>
+                	<dt><img src="Public/images/laba.png" width="16" height="14"></dt>
+                    <dd>苏有朋称相亲是侮辱 将赴印度修行10天</dd>
+                </dl>
+            </li>
+            <li>
+            	<dl>
+                	<dt><img src="Public/images/laba.png" width="16" height="14"></dt>
+                    <dd>苏有朋称相亲是侮辱 将赴印度修行10天</dd>
+                </dl>
+            </li>
+            <li>
+            	<dl>
+                	<dt><img src="Public/images/laba.png" width="16" height="14"></dt>
+                    <dd>苏有朋称相亲是侮辱 将赴印度修行10天</dd>
+                </dl>
+            </li>
+            <li>
+            	<dl>
+                	<dt><img src="Public/images/laba.png" width="16" height="14"></dt>
+                    <dd>苏有朋称相亲是侮辱 将赴印度修行10天</dd>
+                </dl>
+            </li>
+            <li>
+            	<dl>
+                	<dt><img src="Public/images/laba.png" width="16" height="14"></dt>
+                    <dd>苏有朋称相亲是侮辱 将赴印度修行10天</dd>
+                </dl>
+            </li>
+            <li>
+            	<dl>
+                	<dt><img src="Public/images/laba.png" width="16" height="14"></dt>
+                    <dd>苏有朋称相亲是侮辱 将赴印度修行10天</dd>
+                </dl>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="appbtn">
+    	<div class="buttons">
+        	<ul>
+            	<li><img src="Public/images/aa_03.png" width="30" height="30"></li>
+                <li>剧组信息</li>
+            </ul>
+        </div>
+        <div class="buttons1">
+        	<ul>
+            	<li><img src="Public/images/bb_03.png" width="24" height="30"></li>
+                <li>演员信息</li>
+            </ul>
+        </div>
+        <div class="buttons2">
+        	<ul>
+            	<li><img src="Public/images/hyxw_03.png" width="30" height="30"></li>
+                <li>行业新闻</li>
+            </ul>
+        </div>
+        <div class="buttons3">
+        	<ul>
+            	<li><img src="Public/images/ee_03.png" width="30" height="30"></li>
+                <li>奖品信息</li>
+            </ul>
+        </div>
+    </div>
+    <div class="appbtn1">
+    	<div class="buttons"></div>
+        <div class="buttons1"></div>
+        <div class="buttons2">横店专区</div>
+        <div class="buttons3"></div>
+    </div>
+    <div class="appbtn_w">
+    	<div class="buttons_1">
+        	<ul>
+            	<li>编剧</li>
+                <li><b>peng</b></li>
+            </ul>
+        </div>
+        <div class="buttons_2">
+        	<ul>
+            	<li>导演</li>
+                <li><b>peng</b></li>
+            </ul>
+        </div>
+    </div>
+    <div class="appbtn_w1">
+    	<div class="buttons_1">
+        	<ul>
+            	<li>利</li>
+                <li><b>peng</b></li>
+            </ul>
+        </div>
+        <div class="buttons_2">
+        	<ul>
+            	<li>BOSS</li>
+                <li><b>peng</b></li>
+            </ul>
+        </div>
+    </div>
+    <div class="appbtn_btm">
+    	<a><img src="Public/images/tel_04.png" width="33" height="60"></a>
+    </div>
+ 
+</div>
+
+</body>
+</html>
